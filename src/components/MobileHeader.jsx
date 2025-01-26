@@ -10,6 +10,7 @@ import {
   NotebookPen,
   Import,
   BookCheck,
+  AtomIcon,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -43,10 +44,9 @@ const MobileHeader = () => {
         className="flex items-center gap-1 cursor-pointer"
         onClick={() => navigate("/")}
       >
-        <BookCheck size={30} />
-        <span className="ml-4 font-semibold text-gray-700 text-xl">
-          Prod Tasks
-        </span>
+      <span className=" flex gap-2 items-center  font-bold text-green-600 text-2xl">
+          <AtomIcon size={30} color="rgb(22, 163, 74)" /> {/* Same green color */}  DoIt
+          </span>
       </div>
       <div className="flex relative">
         <div className="lg:hidden flex items-center" ref={mobileMenuRef}>

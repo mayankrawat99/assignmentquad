@@ -30,7 +30,7 @@ function TaskList() {
   return (
     <div>
       <div className="flex flex-col sm:flex-row justify-between">
-        <h1 className="text-xl font-semibold">All Tasks</h1>
+        <h1 className="text-xl mb-3 mt-2 font-semibold">All Tasks</h1>
         <InputTask />
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 my-5 gap-3">
